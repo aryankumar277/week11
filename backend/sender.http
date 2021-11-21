@@ -1,0 +1,60 @@
+@host = http://localhost:3000
+
+###
+
+GET {{host}} HTTP/1.1
+
+###
+
+POST {{host}}/addNew HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Abdul",
+    "regno": 201900111,
+    "marks": 30
+}
+
+###
+
+POST {{host}}/addNew HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Binu",
+    "regno": 201900222,
+    "marks": 45
+}
+
+###
+
+POST {{host}}/addNew HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Charu",
+    "regno": 201900222,
+    "marks": 44
+}
+
+###
+
+POST {{host}}/addNew HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Divya",
+    "regno": 201900333,
+    "marks": 50
+}
+
+###
+
+POST {{host}}/addNew HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Eshan",
+    "regno": 201900222,
+    "marks": 29
+}
